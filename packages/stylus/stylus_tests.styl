@@ -1,9 +1,16 @@
+@import "stylus_tests.import.styl"
 
 #stylus-tests
   zoom: 1
 
-unlucky = 13px
+dashy = dashed
 
-.stylus-unlucky-left-border
-  border-left: unlucky solid white
+.stylus-dashy-left-border
+  border-left: 1px dashy black
 
+.stylus-overwrite-size
+  // This property is overwritten in stylus_test.import.styl
+  font-size: 10px
+
+.stylus-import-dashy-border
+  border-left: 1px importDashy black
